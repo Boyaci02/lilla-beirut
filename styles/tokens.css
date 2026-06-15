@@ -1,0 +1,96 @@
+/* ============================================================
+   Lilla Beirut — Design Tokens
+   "Levantine warmth meets Scandinavian restraint"
+   Light theme · OKLCH palette · 4pt spatial scale
+   ============================================================ */
+
+:root {
+  /* ---- Surfaces (warm sand, neutrals tinted toward clay hue ~70) ---- */
+  --sand:        oklch(0.967 0.014 75);   /* page surface — warm cream */
+  --sand-2:      oklch(0.935 0.020 72);   /* elevated cards / alt sections */
+  --sand-3:      oklch(0.895 0.026 70);   /* deeper surface */
+  --line:        oklch(0.27 0.03 50 / 0.14);   /* hairline on sand */
+  --line-strong: oklch(0.27 0.03 50 / 0.26);
+
+  /* ---- Ink (deep warm brown-black, never pure black) ---- */
+  --ink:         oklch(0.265 0.030 52);   /* body + headings */
+  --ink-soft:    oklch(0.430 0.030 55);   /* secondary text */
+  --ink-faint:   oklch(0.575 0.025 60);   /* captions / muted */
+
+  /* ---- Accents ---- */
+  --pom:         oklch(0.505 0.165 25);   /* pomegranate — primary CTA */
+  --pom-deep:    oklch(0.430 0.150 25);   /* pomegranate hover */
+  --clay:        oklch(0.575 0.125 47);   /* terracotta — secondary warm */
+  --clay-deep:   oklch(0.490 0.120 45);
+  --olive:       oklch(0.520 0.070 130);  /* cedar / Levantine green */
+  --olive-deep:  oklch(0.430 0.060 130);
+  --gold:        oklch(0.760 0.105 82);   /* gold — fine hairline accent */
+  --gold-deep:   oklch(0.640 0.100 80);
+
+  /* ---- Dark band (footer / order block) — deep warm aubergine-brown ---- */
+  --dark:        oklch(0.245 0.035 40);
+  --dark-2:      oklch(0.300 0.040 42);
+  --on-dark:     oklch(0.940 0.018 75);   /* cream text on dark */
+  --on-dark-soft:oklch(0.940 0.018 75 / 0.74);
+  --line-dark:   oklch(0.940 0.018 75 / 0.14);
+
+  /* ---- Typography ---- */
+  --font-display: 'Yeseva One', 'Hoefler Text', Georgia, serif;
+  --font-body:    'Familjen Grotesk', system-ui, -apple-system, sans-serif;
+
+  /* fluid display scale (perfect-fourth-ish, 1.28) */
+  --fs-hero:  clamp(3rem, 1.6rem + 6.4vw, 6.5rem);
+  --fs-h1:    clamp(2.4rem, 1.5rem + 3.6vw, 4rem);
+  --fs-h2:    clamp(1.9rem, 1.4rem + 2.1vw, 3rem);
+  --fs-h3:    clamp(1.25rem, 1.05rem + 0.9vw, 1.6rem);
+  --fs-lead:  clamp(1.075rem, 1rem + 0.45vw, 1.35rem);
+  --fs-body:  1.0625rem;        /* 17px */
+  --fs-sm:    0.9375rem;        /* 15px */
+  --fs-xs:    0.8125rem;        /* 13px */
+
+  /* line-heights — generous on Swedish display type so Å Ä Ö never clip */
+  --lh-display: 1.16;
+  --lh-tight:   1.22;
+  --lh-body:    1.62;
+
+  /* ---- Spacing (4pt scale, semantic) ---- */
+  --space-2xs: 4px;
+  --space-xs:  8px;
+  --space-sm:  12px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 144px;
+
+  /* ---- Layout ---- */
+  --max:        1240px;
+  --max-narrow: 760px;
+  --gutter:     clamp(20px, 5vw, 72px);
+  --nav-h:      76px;
+
+  /* ---- Radius (sharp, printed-menu feel — not soft/tech) ---- */
+  --r-sm: 3px;
+  --r-md: 5px;
+  --r-pill: 999px;
+
+  /* ---- Motion ---- */
+  --dur-micro: 180ms;
+  --dur-base:  340ms;
+  --dur-large: 700ms;
+  --dur-reveal: 580ms;   /* scroll-reveal entrance (emil-anim: 400-600ms) */
+  --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);     /* ease-out-quint */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- Levantine 8-point-star tile (gold hairline) — used sparingly ----
+     A khatam-style tessellation rendered as an inline SVG data-URI so it can
+     tint section backgrounds at low opacity without an extra request. */
+  --tile-gold: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%23b8893a' stroke-width='1' opacity='0.5'><path d='M40 6 L48 18 L62 14 L58 28 L74 32 L62 40 L74 48 L58 52 L62 66 L48 62 L40 74 L32 62 L18 66 L22 52 L6 48 L18 40 L6 32 L22 28 L18 14 L32 18 Z'/><circle cx='40' cy='40' r='9'/></g></svg>");
+  --tile-cream: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%23f0e4cf' stroke-width='1' opacity='0.16'><path d='M40 6 L48 18 L62 14 L58 28 L74 32 L62 40 L74 48 L58 52 L62 66 L48 62 L40 74 L32 62 L18 66 L22 52 L6 48 L18 40 L6 32 L22 28 L18 14 L32 18 Z'/><circle cx='40' cy='40' r='9'/></g></svg>");
+}
+
+@media (max-width: 640px) {
+  :root { --nav-h: 62px; }
+}

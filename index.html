@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Lilla Beirut — Libanesiskt meze & grill</title>
+<meta name="description" content="Lilla Beirut — libanesiskt kök lagat från grunden. Meze, kolgrill och nybakat bröd. Beställ online för avhämtning eller leverans.">
+<meta name="theme-color" content="#3a2418">
+
+<link rel="canonical" href="https://lillabeirut.se/">
+<meta property="og:title" content="Lilla Beirut — Libanesiskt meze & grill">
+<meta property="og:description" content="Libanesisk gästfrihet, lagad från grunden. Meze, kolgrill och nybakat bröd.">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:url" content="https://lillabeirut.se/">
+
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/pages.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner wrap">
+    <a class="wordmark" href="index.html" aria-label="Lilla Beirut — startsida">
+      <svg class="wordmark__cedar" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5c.6 1.7 1.7 2.9 3.1 3.6-.8.1-1.6 0-2.3-.4.9 1.7 2.3 2.9 4 3.6-1 .2-2 .1-2.9-.3 1 1.6 2.5 2.7 4.3 3.3-1.3.3-2.6.2-3.8-.4 1.1 1.5 2.7 2.5 4.5 2.9-2 .7-4.1.6-6-.3v3.7h2.4v1.8H12v2.8h-1.6v-2.8H6v-1.8h2.4v-3.7c-1.9.9-4 1-6 .3 1.8-.4 3.4-1.4 4.5-2.9-1.2.6-2.5.7-3.8.4 1.8-.6 3.3-1.7 4.3-3.3-.9.4-1.9.5-2.9.3 1.7-.7 3.1-1.9 4-3.6-.7.4-1.5.5-2.3.4C10.3 4.4 11.4 3.2 12 1.5Z"/></svg>
+      <span>Lilla Beirut</span>
+    </a>
+    <nav class="nav__links" aria-label="Huvudmeny">
+      <a href="meny.html">Meny</a>
+      <a href="#om-oss">Om oss</a>
+      <a href="#hitta-hit">Hitta hit</a>
+    </nav>
+    <a class="btn btn--primary btn--sm nav__cta" href="#bestall">Beställ online <span class="btn__arrow" aria-hidden="true">→</span></a>
+    <button class="nav__burger" id="burger" aria-label="Öppna meny" aria-expanded="false" aria-controls="mobnav"><span></span></button>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="mobnav" id="mobnav" aria-label="Mobilmeny">
+  <div class="mobnav__top wrap">
+    <span class="wordmark wordmark--static">Lilla Beirut</span>
+    <button class="mobnav__close" data-close aria-label="Stäng meny">×</button>
+  </div>
+  <nav class="mobnav__links">
+    <a href="meny.html">Meny</a>
+    <a href="#om-oss" data-close>Om oss</a>
+    <a href="#mezebordet" data-close>Mezebordet</a>
+    <a href="#hitta-hit" data-close>Hitta hit</a>
+  </nav>
+  <a class="btn btn--primary mobnav__cta" href="#bestall" data-close>Beställ online <span class="btn__arrow" aria-hidden="true">→</span></a>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__grid wrap">
+      <div class="hero__copy">
+        <span class="eyebrow reveal">Libanesiskt meze &amp; grill</span>
+        <h1 class="hero__title reveal reveal--d1">En liten bit<br>av Beirut.</h1>
+        <p class="hero__lead reveal reveal--d2">
+          Meze, kolgrill och nybakat bröd — libanesisk gästfrihet,
+          lagad från grunden varje dag.
+        </p>
+        <div class="hero__actions reveal reveal--d3">
+          <a class="btn btn--primary btn--lg" href="#bestall">Beställ online <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost btn--lg" href="meny.html">Se menyn</a>
+        </div>
+        <p class="hero__note reveal reveal--d3">Avhämtning &amp; leverans · onlinebeställning via Qopla</p>
+      </div>
+
+      <figure class="hero__figure reveal reveal--d2">
+        <img src="assets/photos/hummus.jpg" width="1200" height="900"
+             alt="Libanesiskt mezefat med hummus och nygrillat bröd" fetchpriority="high">
+        <span class="hero__tile" aria-hidden="true"></span>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ STORY / OM OSS ============ -->
+  <section class="section" id="om-oss">
+    <div class="story wrap">
+      <figure class="story__media reveal">
+        <img src="assets/photos/salad.jpg" width="1200" height="900" loading="lazy"
+             alt="Mezefat med tabbouleh, rödbetor och krämig dipp">
+      </figure>
+      <div class="story__copy reveal reveal--d1">
+        <span class="eyebrow">Om oss</span>
+        <h2>Recept som rest<br>från Beirut hit.</h2>
+        <p class="lead">
+          Lilla Beirut föddes ur ett kök fullt av folk — familjerecept,
+          ett långt bord och dofter som fyller hela kvarteret.
+        </p>
+        <p>
+          Vi lagar libanesisk husmanskost som den ska vara: meze från
+          grunden, kött från kolgrillen och bröd som bakas under dagen.
+          Inga genvägar, ingen krångel — bara generös mat och ett varmt
+          välkomnande.
+        </p>
+        <a class="link-arrow" href="meny.html">Läs mer i menyn <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE DISHES ============ -->
+  <section class="section surface-2" id="favoriter">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Husets favoriter</span>
+          <h2>Det gästerna kommer<br>tillbaka för.</h2>
+        </div>
+        <p class="sec-head__lead">
+          Ett litet smakprov. Hela menyn — meze, grill, bröd och
+          efterrätter — hittar du på menysidan.
+        </p>
+      </header>
+
+      <div class="dishes reveal">
+        <article class="dish">
+          <div class="dish__media"><img src="assets/photos/mezze.jpg" width="800" height="600" loading="lazy" alt="Mezetallrik med falafel, kibbeh och citron"></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Mezetallrik</h3><span class="dish__price">149&nbsp;kr</span></div>
+            <p>Husets urval av meze — hummus, baba ghanoush, tabbouleh och nybakat bröd.</p>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish__media"><img src="assets/photos/shawarma.jpg" width="800" height="600" loading="lazy" alt="Shawarma i nybakat bröd"></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Shawarma</h3><span class="dish__price">129&nbsp;kr</span></div>
+            <p>Marinerat kött, långsamt grillat, i nybakat bröd med vitlökssås och pickles.</p>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish__media"><img src="assets/photos/grill.jpg" width="800" height="600" loading="lazy" alt="Kolgrillade spett, shish taouk och kafta"></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Grillspett</h3><span class="dish__price">159&nbsp;kr</span></div>
+            <p>Shish taouk och kafta från kolgrillen, med ris, sallad och vitlökssås.</p>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish__media"><img src="assets/photos/falafel.jpg" width="800" height="600" loading="lazy" alt="Krispig falafel med sallad"></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Falafel</h3><span class="dish__price">79&nbsp;kr</span></div>
+            <p>Krispig falafel gjord från grunden varje dag, med tahini och syrade grönsaker.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEZZE TABLE ============ -->
+  <section class="section mezze" id="mezebordet">
+    <div class="wrap">
+      <header class="sec-head sec-head--center reveal">
+        <span class="eyebrow">Mezebordet</span>
+        <h2>Många små rätter.<br>Ett långt bord.</h2>
+        <p class="sec-head__lead">Dela allt, smaka på allt. Så äter man i Beirut.</p>
+      </header>
+
+      <div class="mezze__list reveal reveal--d1">
+        <div class="mezze__col">
+          <div class="m-item"><span class="m-item__name">Hummus</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">69 kr</span></div>
+          <p class="m-item__desc">Krämig kikärtsröra med tahini, citron och olivolja.</p>
+          <div class="m-item"><span class="m-item__name">Baba ghanoush</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">75 kr</span></div>
+          <p class="m-item__desc">Rökig aubergine, tahini och granatäpple.</p>
+          <div class="m-item"><span class="m-item__name">Tabbouleh</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">69 kr</span></div>
+          <p class="m-item__desc">Persilja, bulgur, tomat och mynta.</p>
+          <div class="m-item"><span class="m-item__name">Fattoush</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">75 kr</span></div>
+          <p class="m-item__desc">Krispig sallad med sumak och rostat bröd.</p>
+        </div>
+        <div class="mezze__col">
+          <div class="m-item"><span class="m-item__name">Halloumi</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">85 kr</span></div>
+          <p class="m-item__desc">Grillad halloumi med honung och timjan.</p>
+          <div class="m-item"><span class="m-item__name">Kibbeh</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">89 kr</span></div>
+          <p class="m-item__desc">Friterade bulgurkroketter fyllda med kryddat kött.</p>
+          <div class="m-item"><span class="m-item__name">Muhammara</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">75 kr</span></div>
+          <p class="m-item__desc">Röd paprika och valnöt med granatäppelsirap.</p>
+          <div class="m-item"><span class="m-item__name">Sambousek</span><span class="m-item__dot" aria-hidden="true"></span><span class="m-item__price">79 kr</span></div>
+          <p class="m-item__desc">Små pirog med ost eller kryddat kött.</p>
+        </div>
+      </div>
+
+      <div class="mezze__cta reveal reveal--d2">
+        <a class="btn btn--ghost" href="meny.html">Se hela mezebordet <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORDER / QOPLA ============ -->
+  <section class="section order surface-dark" id="bestall">
+    <div class="wrap order__inner">
+      <div class="order__copy reveal">
+        <span class="eyebrow">Beställ online</span>
+        <h2>Hämta hem<br>hela Beirut.</h2>
+        <p>Beställ för avhämtning eller leverans — enkelt och snabbt. Maten är klar när du är.</p>
+        <a class="btn btn--primary btn--lg" href="#" data-qopla>Beställ via Qopla <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <p class="order__note">Onlinebeställning &amp; betalning sköts av Qopla.</p>
+      </div>
+      <ul class="order__steps reveal reveal--d1">
+        <li><span class="order__num">01</span><div><strong>Välj dina rätter</strong><p>Bläddra i menyn och lägg i varukorgen.</p></div></li>
+        <li><span class="order__num">02</span><div><strong>Avhämtning eller leverans</strong><p>Du väljer — vi gör i ordning.</p></div></li>
+        <li><span class="order__num">03</span><div><strong>Smaklig måltid</strong><p>Färsk, varm och redo på utsatt tid.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ VISIT / HITTA HIT ============ -->
+  <section class="section" id="hitta-hit">
+    <div class="visit wrap">
+      <div class="visit__info reveal">
+        <span class="eyebrow">Hitta hit</span>
+        <h2>Välkommen in.</h2>
+        <div class="visit__rows">
+          <div class="visit__row">
+            <h3>Adress</h3>
+            <!-- TODO: ersätt med riktig adress -->
+            <p>Storgatan 12<br>111 22 Stockholm</p>
+          </div>
+          <div class="visit__row">
+            <h3>Öppettider</h3>
+            <table class="hours">
+              <tr><th>Mån–tors</th><td>11–22</td></tr>
+              <tr><th>Fre</th><td>11–23</td></tr>
+              <tr><th>Lör</th><td>12–23</td></tr>
+              <tr><th>Sön</th><td>13–21</td></tr>
+            </table>
+          </div>
+          <div class="visit__row">
+            <h3>Kontakt</h3>
+            <!-- TODO: ersätt med riktiga uppgifter -->
+            <p><a href="tel:+46812345678">08-123 456 78</a><br>
+               <a href="mailto:hej@lillabeirut.se">hej@lillabeirut.se</a></p>
+          </div>
+        </div>
+        <div class="visit__actions">
+          <a class="btn btn--primary" href="#bestall">Beställ online <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="tel:+46812345678">Ring oss</a>
+        </div>
+      </div>
+      <figure class="visit__map reveal reveal--d1" aria-label="Karta — Lilla Beirut">
+        <!-- TODO: ersätt med inbäddad Google Maps för riktig adress -->
+        <iframe title="Karta till Lilla Beirut" loading="lazy"
+          src="https://www.google.com/maps?q=Storgatan+12,+Stockholm&output=embed"></iframe>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer surface-dark">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="wordmark wordmark--static wordmark--on-dark">
+        <svg class="wordmark__cedar" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5c.6 1.7 1.7 2.9 3.1 3.6-.8.1-1.6 0-2.3-.4.9 1.7 2.3 2.9 4 3.6-1 .2-2 .1-2.9-.3 1 1.6 2.5 2.7 4.3 3.3-1.3.3-2.6.2-3.8-.4 1.1 1.5 2.7 2.5 4.5 2.9-2 .7-4.1.6-6-.3v3.7h2.4v1.8H12v2.8h-1.6v-2.8H6v-1.8h2.4v-3.7c-1.9.9-4 1-6 .3 1.8-.4 3.4-1.4 4.5-2.9-1.2.6-2.5.7-3.8.4 1.8-.6 3.3-1.7 4.3-3.3-.9.4-1.9.5-2.9.3 1.7-.7 3.1-1.9 4-3.6-.7.4-1.5.5-2.3.4C10.3 4.4 11.4 3.2 12 1.5Z"/></svg>
+        Lilla Beirut
+      </span>
+      <p class="footer__tag">Libanesiskt kök lagat från grunden. Meze, kolgrill och nybakat bröd.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Meny</h4>
+      <ul>
+        <li><a href="meny.html">Hela menyn</a></li>
+        <li><a href="#mezebordet">Mezebordet</a></li>
+        <li><a href="#favoriter">Favoriter</a></li>
+        <li><a href="#bestall">Beställ online</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li>Storgatan 12</li>
+        <li>111 22 Stockholm</li>
+        <li><a href="tel:+46812345678">08-123 456 78</a></li>
+        <li><a href="mailto:hej@lillabeirut.se">hej@lillabeirut.se</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Öppettider</h4>
+      <ul>
+        <li>Mån–tors 11–22</li>
+        <li>Fre 11–23</li>
+        <li>Lör 12–23</li>
+        <li>Sön 13–21</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year></span> Lilla Beirut</span>
+    <span class="footer__meta">Onlinebeställning via Qopla · Webb av <a href="https://visuanza.es" target="_blank" rel="noopener">Visuanza</a></span>
+  </div>
+</footer>
+
+<script src="scripts/main.js" defer></script>
+</body>
+</html>
