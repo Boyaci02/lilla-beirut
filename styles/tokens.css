@@ -18,8 +18,10 @@
   --ink-faint:   oklch(0.575 0.025 60);   /* captions / muted */
 
   /* ---- Accents ---- */
-  --pom:         oklch(0.505 0.165 25);   /* pomegranate — primary CTA */
-  --pom-deep:    oklch(0.430 0.150 25);   /* pomegranate hover */
+  --pom:         #206634;                  /* PRIMÄR — cedergrön ur loggan (matchar loggan) */
+  --pom-deep:    #184F28;                  /* cedergrön hover */
+  --warm:        oklch(0.505 0.165 25);   /* pomegranate — varm sekundäraccent */
+  --warm-deep:   oklch(0.430 0.150 25);
   --clay:        oklch(0.575 0.125 47);   /* terracotta — secondary warm */
   --clay-deep:   oklch(0.490 0.120 45);
   --olive:       #206634;                  /* cedar green — EXAKT ur Lilla Beirut-loggan */

@@ -69,7 +69,7 @@ p { max-width: 68ch; }
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--clay-deep);
+  color: var(--olive-deep);
 }
 .eyebrow::before {
   content: "";
