@@ -13,9 +13,11 @@
   color: var(--ink);
   white-space: nowrap;
 }
-.wordmark__cedar { width: 22px; height: 22px; fill: var(--clay); flex: none; }
+.wordmark__cedar { width: 22px; height: 22px; fill: var(--olive); flex: none; }
+.wordmark__logo { height: 46px; width: auto; display: block; }
+.footer__logo { height: 64px; width: auto; display: block; background: #fff; padding: 6px 10px; border-radius: 10px; }
 .wordmark--on-dark { color: var(--on-dark); font-size: 1.5rem; }
-.wordmark--on-dark .wordmark__cedar { fill: var(--gold); }
+.wordmark--on-dark .wordmark__cedar { fill: var(--olive-light); }
 
 /* ---------- Buttons ---------- */
 .btn {

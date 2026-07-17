@@ -22,8 +22,9 @@
   --pom-deep:    oklch(0.430 0.150 25);   /* pomegranate hover */
   --clay:        oklch(0.575 0.125 47);   /* terracotta — secondary warm */
   --clay-deep:   oklch(0.490 0.120 45);
-  --olive:       oklch(0.520 0.070 130);  /* cedar / Levantine green */
-  --olive-deep:  oklch(0.430 0.060 130);
+  --olive:       #206634;                  /* cedar green — EXAKT ur Lilla Beirut-loggan */
+  --olive-deep:  #184F28;                  /* mörkare cedergrön (hover) */
+  --olive-light: #5C9B6E;                  /* ljus cedergrön för mörk bg */
   --gold:        oklch(0.760 0.105 82);   /* gold — fine hairline accent */
   --gold-deep:   oklch(0.640 0.100 80);
 
